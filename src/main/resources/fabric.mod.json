@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "lootcrates",
+  "version": "${version}",
+  "name": "LootCrates",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/LootCrates/icon.png",
+  "environment": "server",
+
+  "entrypoints": {
+    "client": [
+      "dev.blu3.lootcrates.client.LootCratesClient"
+    ],
+    "main": [
+      "dev.blu3.lootcrates.LootCrates"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric": "*",
+    "cobblemon": "*",
+    "minecraft": "1.20.1"
+
+  },
+  "mixins": [
+    "lootcrates.mixins.json"
+  ]
+}
